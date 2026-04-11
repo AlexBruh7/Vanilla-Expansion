@@ -1,0 +1,12 @@
+{
+    "displayName" : "Vanilla Expansion",
+    "repo" : "AlexBruh7/Vanilla-Expansion",
+    "name" : "vanilla-expansion",
+    "main": "vanilla.expansion.VanillaExpansionMain",
+    "author": "AlexBruh",
+    "description":"Adds new content to vanilla still in very early development, team: AlexBruh: Coding, spriting   PalomoArduino: Testing",
+    "subtitle": "[#e03a39[]]Feeling that Vanilla needs some extra stuff?",
+    "minGameVersion": "157",
+    "hidden": false,
+    "version": "[red]0.3"
+}
