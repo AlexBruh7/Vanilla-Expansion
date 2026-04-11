@@ -1,0 +1,78 @@
+{
+  "name": "Arrow",
+  "description": "A basic armored ship, very powerful for coast defense",
+  "research": {
+			  "requirements": [
+			  "silicon/200",
+			  "metaglass/185",
+			  "titanium/70"
+			  ],
+			  "parent": "risso"
+		  },
+  "outlineColor": "565666",
+  "type": "naval",
+  "armor": 6,
+  "hitSize": 12,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "sprite": "arrow",
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.2,
+  "speed": 0.8,
+  "flying": false,
+  "health": 475,
+  "range": 150,
+
+  "weapons": [
+    {
+      "name": "arrow-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 0,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 2,
+      "rotateSpeed": 3,
+      "cooldownTime": 180,
+      "shootY": 8,
+      "reload": 50,
+      "recoil": 0.3,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+        "lifetime": 25.940321,
+        "damage": 60,
+        "pierceArmor": false,
+        "speed": 10,
+        "trailLength": 4,
+        "trailWidth": 1.5,
+        "width": 6,
+        "height": 10,
+        "trailColor": "99AAE8",
+        "backColor": "99AAE8",
+        "frontColor": "CCD9E8"
+      }
+    }
+  ]
+}

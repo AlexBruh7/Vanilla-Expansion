@@ -1,0 +1,107 @@
+{
+  "name": "Glaucus",
+  "description": "A heavy missile-launcher ship, but it takes a lot for reload",
+  "research": {
+			  "requirements": [
+			  "silicon/200",
+			  "metaglass/185",
+			  "titanium/70"
+			  ],
+			  "parent": "buoy"
+		  },
+  "outlineColor": "565666",
+  "type": "naval",
+  "armor": 8,
+  "hitSize": 26,
+  "squareShape": true,
+  "sprite": "glaucus",
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.2,
+  "speed": 0.75,
+  "flying": false,
+  "targetAir": true,
+  "targetGround": true,
+  "health": 2395,
+  "range": 175,
+
+  "weapons": [
+    {
+      "name": "glaucus-missile-launcher",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 2,
+      "layerOffset": 1,
+      "rotate": false,
+      "inaccuracy": 1,
+      "rotateSpeed": 8,
+      "cooldownTime": 180,
+      "shootY": 8,
+      "reload": 200,
+      "recoil": 0.5,
+      "shootCone": 360,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "shoot": {
+        "shots": 5,
+        "shotDelay": 10
+      },
+      "bullet": {
+        "type": "artilleryBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "none",
+        "hitEffect": "flakExplosion",
+        "hitColor": "C85C51",
+        "despawnHit": true,
+        "accel": 0.25,
+        "lifetime": 75,
+	      "homingRange": 40,
+	      "homingPower": 0.2,
+        "homingDelay": 1.5,
+        "knockback": 2,
+        "layer": 1,
+        "damage": 255,
+        "pierceArmor": true,
+        "speed": 2,
+        "trailLength": 10,
+        "trailWidth": 2.25,
+        "trailRotation": true,
+        "splashDamage": 55,
+        "splashDamageRadius": 40,
+        "weaveMag": 2,
+        "weaveScale": 2,
+        "width": 8,
+        "height": 26,
+        "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 3,
+              "strokeFrom": 1.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FFFFFF",
+              "colorTo": "C85C51",
+              "lifetime": 10
+            }
+          ],
+        "trailColor": "C85C51",
+        "frontColor": "FF795E",
+        "backColor": "C85C51"
+      }
+    }
+  ]
+}

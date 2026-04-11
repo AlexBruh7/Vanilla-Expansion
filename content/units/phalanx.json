@@ -1,0 +1,62 @@
+{
+    "localizedName": "Phalanx",
+	"sprite": "phalanx",
+	"description": "A small ship that will shoot with a macchine gun.",
+    "research": {
+			"requirements": [
+			"silicon/100",
+			"lead/300",
+			"titanium/250"
+			],
+			"parent": "flare"
+		},
+    "speed": 3.95,
+    "accel": 0.6,
+    "drag": 0.2,
+	"lowAltitude": true,
+    "flying": true,
+    "health": 120,
+    "armor": 2,
+    "engineOffset": 7,
+	"engineSize": 3,
+	"TargetAir": true,
+    "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "actually-it-works",
+	"layer": -1,
+    "shootCone": 10,
+    "mirror": false,
+    "top": false,
+    "x": 0,
+    "y": -2,
+    "reload": 10.5,
+	"shoot": {
+		"shots": 1,
+		"shotDelay": 1
+	},
+	"inaccuracy": 4,
+    "shootSound": "missile",
+    "recoil": 0.5,
+	"shake": 0.5,
+    "bullet": {
+		"lifetime": 15.5,
+        "type": "MissileBulletType",
+	    "hitEffect": "flakExplosionBig",
+	    "trailLength": 18,
+	    "trailWidth": 3.45,
+	    "sprite": "missile",
+        "damage": 4,
+	    "keepVelocity": "true",
+	    "homingRange": 10,
+	    "speed": 10,
+	    "homingPower": 0.055,
+	    "hitSound": "dullExplosion",
+	    "hitSoundVolume": 0.7,
+	    "hitSoundPitch": 0.7,
+	    "width": 1,
+	    "height": 2
+			}
+		}
+	]
+}

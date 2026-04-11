@@ -1,0 +1,31 @@
+{
+    "type": "UnitCargoLoader",
+    "name": "Ship Port",
+    "description": "A cargo loader for ships.",
+    "size": 3,
+    "health": 550,
+    "hasPower": false,
+    "category": "distribution",
+    "liquidCapacity": 600,
+    "itemCapacity": 250,
+    "unitType":	"harborline",	
+    "unitBuildTime": 480.0,	
+    "polyStroke": 1.5,	
+    "polyRadius": 6,	
+    "polySides": 4,
+    "polyRotateSpeed": 4,	
+    "polyColor": "8CFF89",	
+    "requirements": [
+     "thorium/150",
+     "graphite/200",
+     "silicon/110",
+     "titanium/445",
+     "steel/200"
+     ],
+    "consumes": {
+        "liquid": {
+            "liquid": "oil",
+            "amount": 1
+        }
+    }
+}

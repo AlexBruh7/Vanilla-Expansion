@@ -1,0 +1,25 @@
+{
+ "name": "Thorium bridge",
+ "type": "ItemBridge",
+ "size": 1,
+ "health": 425,
+ "speed": 2,
+ "range": 18,
+ "requirements": [
+   "copper/10",
+   "lead/15",
+   "titanium/5"
+ ],
+ "category": "distribution",
+ "transportTime": 0.035,
+ "squareSprite": false,
+ "itemCapacity": 65,
+  "hasPower": false,
+ "parent": "armored-conveyor",
+ "researchCost": [
+   "copper/200",
+   "lead/350",
+   "titanium/100",
+   "thorium/20"
+ ]
+}

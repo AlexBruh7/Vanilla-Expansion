@@ -1,0 +1,72 @@
+{
+  "name": "Breaker",
+  "description": "Ship equipped with a cannon that have fragmentation bullets",
+  "outlineColor": "565666",
+  "type": "naval",
+  "armor": 8,
+  "hitSize": 14,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "sprite": "breaker",
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.2,
+  "speed": 0.9,
+  "flying": false,
+  "health": 795,
+  "range": 60,
+  "weapons": [
+    {
+      "name": "breaker-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 0,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 5,
+      "rotateSpeed": 3,
+      "cooldownTime": 80,
+      "shootY": 10,
+      "reload": 50,
+      "recoil": 0.4,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "basicBulletType",
+        "shots": 4,
+        "shootDelay": 2,
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "flakExplosion",
+        "despawnHit": true,
+        "lifetime": 15.940321,
+        "damage": 80,
+        "pierceArmor": false,
+        "speed": 5,
+        "trailLength": 7,
+        "trailWidth": 6,
+        "width": 12,
+        "height": 10,
+        "fragBullets":5,
+        "trailColor": "f3985e",
+        "backColor": "eccd79",
+        "frontColor": "f9dd90"
+      }
+    }
+  ]
+}

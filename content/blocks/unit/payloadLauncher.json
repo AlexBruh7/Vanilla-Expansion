@@ -1,0 +1,37 @@
+{
+ "name": "Payload launcher", 
+ "type": "PayloadMassDriver",
+ "sprite": "payloadLauncher-base",
+ "reload": 120,
+ "chargeTime": 100,
+ "range": 555,
+ "maxPayloadSize": 2.75,
+ "size": 3,
+ "researchCostMultiplier": 0.5,
+ "consumes": {
+   "power": 3
+ },
+ "health": 650,
+ "category": "units",
+ "research": {
+   "parent": "mass-driver"
+ },
+ "requirements": [
+   "copper/1050",
+   "silicon/550",
+   "thorium/675",
+   "titanium/800"
+ ],
+ "shake": 5,
+ "shootSound": "massdriver",
+ "shooteffect": "shootBig2",
+ "baseRegion": "payloadLauncher",
+ "capRegion": "payloadLauncher-cap",
+ "rightRegion": "payloadLauncher-right",
+ "leftRegion": "payloadLauncher-left",
+ "baseOutlineRegion": "payloadLauncher-base-outline",
+ "capOutlineRegion": "payloadLauncher-cap-outline",
+ "rightOutlineRegio": "payloadLauncher-right-outline",
+ "leftOutlineRegion": "payloadLauncher-left-outline",
+ "outlineColor": "565666"
+}

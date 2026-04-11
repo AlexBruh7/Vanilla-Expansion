@@ -1,0 +1,45 @@
+{
+ "type": "missile",
+ "template": "MissileUnitType",
+ "sprite": "bright-uranium-missile",
+ "flying": true,
+ "speed": 5,
+ "lifetime": 225,
+ "rotateSpeed": 0.8,
+ "health": 175,
+ "outlineColor": "565666",
+ "homingDelay": 2,
+ "damage": 1000,
+ "engineSize": 2,
+ "controller": "missileAi",
+ "engines": [
+ {
+     "x": 0,
+     "y": -7,
+     "radius": 3,
+     "rotation": -90
+ }
+ ],
+ "deathExplosionEffect": "none",
+ "weapons": [
+   {
+     "shootOnDeath": true,
+     "shootCone": 360,
+     "reload": 1,
+     "bullet": {
+       "type": "ExplosionBulletType",
+       "effect": "missileTrailShort",
+       "collidesAir": false,
+       "collidesGround": true,
+       "hitEffect": "scatheExplosion",
+       "hitColor": "ed3478",
+       "hitSoundVolume": 3,
+       "hitSound": "titanExplosion",
+       "scaledSplashDamage": true,
+       "splashDamage": 100,
+       "splashDamageRadius": 125,
+       "splashDamagePierce": 3
+     }
+   }
+ ]
+}

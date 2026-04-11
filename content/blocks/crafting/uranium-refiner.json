@@ -1,0 +1,64 @@
+{
+ "name": "Uranium refiner",  
+ "type": "GenericCrafter",
+ "description": "It refines uranium, uses large amounts of uranium to enrich it, consumes a lot of energy, and takes a long time to produce.",
+ "details": "WIP",
+ "size": 3,
+ "health": "950",
+ "hasPower": true,
+ "hasLiquids": true,
+ "liquidCapacity": 200,
+ "itemCapacity": 40, 
+ "craftTime": 350,
+ "category": "crafting",
+ "drawer": {
+    "type": "drawMulti",
+    "drawers": [
+    {
+    "type": "drawDefault"
+    },
+    {
+    "type": "drawGlowRegion",
+    "suffix": "-glow",
+    "color": "FF5401"
+    }
+    ]
+},
+ "requirements": [
+  "thorium/150",
+  "graphite/200",
+  "silicon/110",
+  "titanium/445"
+],
+"research": "thorium-reactor",
+"outputItem": {
+    "item": "refined-uranium",
+    "amount": 1
+    },
+"outputLiquid": {
+    "liquid": "radioactive-waste",
+    "amount": 0.08435
+    },
+ "consumes": {
+    "power": 5.5,
+    "liquid": {
+    "liquid": "water",
+    "amount": 0.18455
+    },
+    "items": {
+        "items": [
+        "uranium/20"
+        ]
+    }
+} ,
+"explodeOnFull": true,
+"explosionDamage": 150,
+"explosionRadius": 50,
+"explosionMinWarmup": 60,
+"explosionShake": 100,
+"explosionPuddleLiquid": "radioactive-waste",
+"explosionPuddleAmount": 500,
+"explosionPuddleRange": 150,
+"explosionPuddles": 100
+
+}

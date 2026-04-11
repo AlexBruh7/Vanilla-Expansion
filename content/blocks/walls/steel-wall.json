@@ -1,0 +1,20 @@
+{
+"name":"Steel wall",
+"description": "a wall made of steel, not very resistent but can reflect bullets",
+"health": 420,
+"armor": 5,
+"size": 1,
+"researchCostMultiplier": 0.5,
+"sprite": "steel-wall",
+"requirements": [
+"steel/6"
+],
+"category": "defense",
+"type": "wall",
+"research": {
+      "parent": "titanium-wall",
+      "requirements": [
+        "steel/200"
+      ]
+  }
+}

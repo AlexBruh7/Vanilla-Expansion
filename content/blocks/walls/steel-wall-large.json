@@ -1,0 +1,21 @@
+{
+"name":"Large steel wall",
+"description": "a large wall made of steel, not very resistent but can reflect bullets",
+"health": 1680,
+"armor": 20,
+"size": 2,
+"researchCostMultiplier": 0.5,
+"sprite": "steel-wall-large",
+"requirements": [
+"steel/24"
+],
+"category": "defense",
+"type": "wall",
+"research": {
+      "parent": "steel-wall",
+      "requirements": [
+        "steel/800"
+      ]
+  }
+
+}

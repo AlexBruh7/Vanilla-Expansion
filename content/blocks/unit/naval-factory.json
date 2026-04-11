@@ -1,0 +1,47 @@
+{
+  "plans": [
+    {
+      "unit": "risso",
+      "time": 2700,
+      "requirements": [
+        "silicon/20",
+        "metaglass/35"
+      ]
+    },
+    {
+      "unit": "retusa",
+      "time": 3000,
+      "requirements": [
+        "silicon/15",
+        "metaglass/25",
+        "titanium/20"
+      ]
+    },
+    {
+      "unit": "buoy",
+      "time": 2000,
+      "requirements": [
+        "silicon/15",
+        "coal/10"
+      ]
+    },
+    {
+      "unit": "arrow",
+      "time": 3400,
+      "requirements": [
+        "silicon/30",
+        "metaglass/20",
+        "graphite/15"
+      ]
+    },
+    {
+      "unit": "blade",
+      "time": 3500,
+      "requirements": [
+        "silicon/25",
+        "graphite/15",
+        "blast-compound/5"
+      ]
+    }
+  ]
+}

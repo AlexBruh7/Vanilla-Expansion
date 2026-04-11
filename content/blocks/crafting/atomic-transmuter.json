@@ -1,0 +1,91 @@
+{
+ "name": "Atomic transmuter",  
+ "type": "GenericCrafter",
+ "description": "Discomposes refined uranium into plutonium and neptunium at the same time.",
+ "details": "WIP",
+ "size": 4,
+ "health": "1450",
+ "hasPower": true,
+ "hasLiquids": true,
+ "liquidCapacity": 200,
+ "itemCapacity": 60,
+ "rotateSpeed": 4,
+ "craftTime": 450,
+ "craftEffect": {
+    "type": "MultiEffect",
+    "effects": [
+    {
+    "type": "particleEffect",
+    "particles": 14,
+    "colorFrom": "FF593E",
+    "colorTo": "FA836C",
+    "sizeFrom": 1.5,
+    "sizeTo": 0,
+    "lifetime": 180,
+    "length": 6
+    }
+  ]
+ },
+ "category": "crafting",
+ "requirements": [
+  "thorium/150",
+  "graphite/200",
+  "silicon/110",
+  "titanium/445"
+],
+"research": "uranium-refiner",
+"drawer": {
+    "type": "drawMulti",
+    "drawers": [
+    {
+    "type": "drawDefault"
+    },
+    {
+    "type": "drawRegion",
+    "suffix": "-rotator",
+    "spinSprite": true,
+    "rotateSpeed": 12
+    },
+    {
+    "type": "drawRegion",
+    "suffix": "-top"
+    }
+    ]
+},
+"outputItems": [
+    {
+    "item": "plutonium",
+    "amount": 1
+    },
+    {
+    "item": "neptunium",
+    "amount": 1
+    }
+],
+"outputLiquid": {
+    "liquid": "radioactive-waste",
+    "amount": 0.75
+    },
+ "consumes": {
+    "power": 6.5,
+    "liquid": {
+    "liquid": "cryofluid",
+    "amount": 0.3
+    },
+    "items": {
+        "items": [
+        "refined-uranium/16"
+        ]
+    }
+} ,
+"explodeOnFull": true,
+"explosionDamage": 150,
+"explosionRadius": 50,
+"explosionMinWarmup": 60,
+"explosionShake": 100,
+"explosionPuddleLiquid": "radioactive-waste",
+"explosionPuddleAmount": 500,
+"explosionPuddleRange": 150,
+"explosionPuddles": 100
+
+}

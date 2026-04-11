@@ -1,0 +1,86 @@
+{
+  "name": "Bulwark",
+  "description": "A light tank, with high defense but very basic",
+  "research": {
+			"requirements": [
+			"silicon/155",
+			"lead/100",
+			"graphite/50"
+			],
+			"parent": "dagger"
+		},
+  "outlineColor": "565666",
+  "type": "tank",
+  "armor": 3,
+  "hitSize": 12,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "sprite": "bulwark",
+  "treadRects": [
+    {
+      "x": 7,
+      "y": -26,
+      "width": 14,
+      "height": 51
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 1.25,
+  "speed": 0.7,
+  "flying": false,
+  "health": 250,
+  "range": 120,
+
+  "weapons": [
+    {
+      "name": "bulwark-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 0,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 3,
+      "rotateSpeed": 3,
+      "cooldownTime": 160,
+      "shootY": 8,
+      "reload": 45,
+      "recoil": 0.3,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+        "lifetime": 22.85714286,
+        "damage": 22,
+        "pierceArmor": false,
+        "speed": 6.5,
+        "trailLength": 8,
+        "trailWidth": 1.5,
+        "width": 4,
+        "height": 9,
+        "trailColor": "99AAE8",
+        "backColor": "99AAE8",
+        "frontColor": "CCD9E8"
+      }
+    }
+  ]
+}

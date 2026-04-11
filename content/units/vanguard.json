@@ -1,0 +1,101 @@
+{
+  "name": "Vanguard",
+  "description": "A medium tank, with even more defense and a double barrel cannon, perfect for first line and absorbing damage",
+   "research": {
+			"requirements": [
+			"silicon/685",
+			"lead/1000",
+			"graphite/1450"
+			],
+			"parent": "rampart"
+		},
+  "outlineColor": "565666",
+  "type": "tank",
+  "armor": 9,
+  "hitSize": 16,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "sprite": "vanguard",
+  "treadRects": [
+    {
+      "x": 7,
+      "y": -46,
+      "width": 14,
+      "height": 51
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 1.4,
+  "speed": 0.55,
+  "flying": false,
+  "health": 950,
+  "range": 80,
+  "weapons": [
+    {
+      "name": "vanguard-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": -2,
+      "layerOffset": 1,
+      "rotate": true,
+      "shots": 2,
+      "inaccuracy": 1,
+      "rotateSpeed": 3.5,
+      "cooldownTime": 270,
+      "shootY": 9,
+      "reload": 140,
+      "recoil": 1,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "shoot": {
+        "type": "ShootBarrel",
+        "shots": 4,
+        "firstShotDelay": 10,
+        "shotDelay": 25,
+        "barrels": 2,
+        "barrels": [
+          2, 0, 0,
+          -2, 0, 0
+        ]
+      },
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "flakExplosionBig",
+        "splashDamageRadius": 40,
+        "splashDamage": 50,
+        "shotDelay": 50,
+        "despawnHit": true,
+        "lifetime": 30.295,
+        "damage": 40,
+        "pierceArmor": false,
+        "speed": 7.2,
+        "trailLength": 6,
+        "trailWidth": 2,
+        "width": 5,
+        "height": 10,
+        "trailEffect": "artilleryTrail",
+        "trailColor": "99AAE8",
+        "backColor": "99AAE8",
+        "frontColor": "CCD9E8"
+      }
+    }
+  ]
+}
