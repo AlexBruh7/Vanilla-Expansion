@@ -1,0 +1,24 @@
+{
+ "type": "CoreBlock",
+ "name": "Champion: Cargo",
+ "description": "the Pad of the Cargo champion, that allows taking blocks and reparing units and blocks",
+ "health": 1250,
+ "size": 2,
+ "unitType": "cargo",
+ "solid": false,
+ "squareSprite": false,
+ "placeableLiquid": true,
+ "itemCapacity": 0,
+ "unitCapModifier": 0,
+ "alwaysUnlocked": true,
+ "firstTier": true,
+ "research": "championPlaque",
+ "requirements": [
+	 "copper/1550",
+	 "lead/650",
+	 "graphite/855",
+	 "silicon/355"
+ ],
+ "researchCostMultiplier": 0.5,
+ "category": "effect"
+}

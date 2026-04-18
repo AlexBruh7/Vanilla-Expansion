@@ -1,0 +1,147 @@
+{
+ "name": "Punisher",
+ "description": "An destructive tank eqquiped with a rocket launcher and a macchine gun",
+  "research": {
+			"requirements": [
+			"silicon/8325",
+			"lead/18300",
+			"graphite/12850"
+			],
+			"parent": "vanguard"
+		},
+ "type": "tank",
+ "hitSize": 30.5,
+ "speed": 0.45,
+ "range": 355,
+ "health": 12550,
+ "armor": 20,
+ "predictTarget": false,
+ "sprite": "mexmissur",
+ "rotate speed": "1.5",
+ "singleTarget": false,
+ "omniMovement": false,
+ "rotateMoveFirst": true,
+ "squareShape": true,
+ "treadPullOffSet": 8,
+ "treadRects": [
+    {
+      "x": 7,
+      "y": -26,
+      "width": 14,
+      "height": 51
+    }
+  ],
+ "flying": "false",
+ "weapons": [
+    {
+      "name": "punisher-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": -3.25,
+      "layerOffset": 2,
+      "rotate": true,
+      "inaccuracy": 12,
+      "rotateSpeed": 2.5,
+      "cooldownTime": 200,
+      "shootY": 12,
+      "reload": 800,
+      "recoil": 2,
+      "outline":true,
+      "shoot": { 
+         "shots": 4,
+         "shotDelay": 24
+       },
+      "parts": [
+       {
+         "type": "RegionPart",
+         "suffix": "-barrel",
+         "under": true,
+         "moves": [
+        {
+         "type": "PartMove",
+         "progress": "recoil",
+         "y": -6.5
+        }
+       ]
+       }
+     ],
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "artilleryBulletType",
+        "hitEffect": "titanSmokeSmall",
+        "hitColor": "99AAE8",
+        "speed": 7.5,
+        "damage": 80,
+        "lifetime": 90,
+        "width": 20,
+        "height": 28,
+        "knockback": 2,
+        "trailColor": "99AAE8",
+        "backColor": "99AAE8",
+        "frontColor": "CCD9E8",
+        "trailWidth": 3.2,
+        "trailLength": 20,
+        "collidesGround": true,
+        "collidesAir": false,
+        "splashDamage": 160,
+        "splashDamageRadius": 60,
+        "lightning": 8,
+        "lightningLength": 12,
+        "lightningDamage": 50,
+        "lightningColor": "99AAE8"
+      }
+    },
+    {
+      "name": "mexmissur-gun",
+      "mirror": true,
+      "top": true,
+      "x": 7,
+      "y": 4.2,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 1,
+      "rotateSpeed": 3,
+      "cooldownTime": 240,
+      "targetAir": "false",
+      "targetGround": "true",
+      "shootY": 10,
+      "reload": 10,
+      "recoil": 0.6,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "flakExplosion",
+        "despawnHit": true,
+        "lifetime": 48.955,
+        "damage": 30,
+        "pierceArmor": true,
+        "speed": 6,
+        "trailLength": 12,
+        "trailWidth": 2,
+        "width": 7,
+        "height": 14,
+        "fragBullets":5,
+        "trailColor": "99AAE8",
+        "backColor": "99AAE8",
+        "frontColor": "CCD9E8"
+      }
+    }
+  ]
+}

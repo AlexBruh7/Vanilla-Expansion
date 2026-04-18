@@ -1,0 +1,109 @@
+{
+ "name":"Union",
+ "description": "A medium range turret, useful for single target, with high damage and good tracking, but very slow and with a long cooldown",
+ "health": 1675,
+ "size": 3,
+ "recoil": 3.5,
+ "shootY": 5,
+ "cooldown": 550,
+ "reload": 155,
+ "range": 300,
+ "predictTarget": false,
+ "type": "itemTurret",
+ "category": "turret",
+ "requirements": [
+		"graphite/170",
+    "silicon/215",
+    "beryllium/75",
+    "tungsten/135"
+  	],
+ "research": "breach",
+ "ammoUseEffect": "casing1",
+ "inaccuracy": 0,
+ "rotateSpeed": 4,
+ "shootSound": "shootTitan",
+ "shootEffect": "shootSmallFlame",
+ "targetGround": false,
+ "targetAir": true,
+ "hasItem": true,
+ "maxAmmo": 10,
+ "ammoPerShot": 5,
+ "shake": 6.5,
+ "consumes": {
+  "coolant": {
+    "amount": 0.2,
+    "optional": false
+  }
+ },
+ "shoot": {
+  "type": "ShootBarrel",
+  "shots": 4,
+  "firstShotDelay": 5,
+  "shotDelay": 5,
+  "barrels": 2,
+  "barrels": [
+   7, 0, 0,
+   -7, 0, 0
+  ]
+ },
+ "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "reinforced-"
+  },
+ "parts": [   
+      {
+        "type": "RegionPart",
+       "suffix": "-barrel",
+       "under": true,
+       "moves": [
+      {
+       "type": "PartMove",
+       "progress": "recoil",
+       "y": -4
+      }
+    ]
+   }
+  ],
+ "ammoTypes": {
+   "tungsten": {
+     "reloadMultiplier": 1,
+      "type": "basicBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "hitBulletSmall",
+      "despawnHit": true,
+      "lifetime": 40,
+      "damage": 60,
+      "splashDamage": 60,
+      "splashDamageRadius": 60,
+      "pierceArmor": false,
+      "speed": 8,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "homingPower": 0.15,
+      "homingRange": 60,
+      "homingDelay": 5,
+      "width": 10,
+      "length": 18
+    },
+   "silicon": {
+     "reloadMultiplier": 1.15,
+     "rangeChange": 5,
+      "type": "artilleryBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "hitBulletSmall",
+      "despawnHit": true,
+      "lifetime": 30,
+      "splashDamage": 80,
+      "splashDamageRadius": 50,
+      "pierceArmor": false,
+      "speed": 7.75,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "homingPower": 0.05,
+      "homingRange": 40,
+      "homingDelay": 5,
+      "width": 10,
+      "length": 20
+    }
+  }
+}

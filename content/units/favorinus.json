@@ -1,0 +1,114 @@
+{
+  "name": "Arrow",
+  "description": "A basic armored ship, very powerful for coast defense",
+  "research": {
+			  "requirements": [
+			  "silicon/200",
+			  "metaglass/185",
+			  "titanium/70"
+			  ],
+			  "parent": "risso"
+		  },
+  "outlineColor": "565666",
+  "type": "naval",
+  "armor": 6,
+  "hitSize": 12,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.2,
+  "speed": 0.8,
+  "flying": false,
+  "health": 475,
+  "range": 150,
+
+  "weapons": [
+    {
+      "name": "favorinus-launcher",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": -2,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 2,
+      "rotateSpeed": 3,
+      "cooldownTime": 180,
+      "shootY": 6,
+      "reload": 200,
+      "recoil": 0.3,
+      "outline":true,
+      "shootSound": "shoot",
+      "shoot": {
+        "type": "ShootBarrel",
+        "shots": 3,
+        "firstShootDelay": 6,
+        "shotDelay": 12,
+        "barrels": 3,
+        "barrels": [
+          1, 0, 0,
+          -1, 0, 0,
+          0, 1.25, 0
+        ]
+      },
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+        "lifetime": 35,
+        "damage": 120,
+        "homingPower": 0.35,
+        "homingRange": 60,
+        "homingDelay": 2,
+        "pierceArmor": false,
+        "speed": 7,
+        "trailLength": 4,
+        "trailWidth": 1.5,
+        "width": 6,
+        "height": 10,
+        "frontColor": "FF795E",
+        "backColor": "C85C51",
+        "trailColor": "C85C51"
+      }
+    },
+    {
+      "name": "favorinus-cannon",
+      "mirror": true,
+      "top": true,
+      "x": 5,
+      "y": 7,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 1,
+      "rotateSpeed": 3,
+      "cooldownTime": 180,
+      "shootY": 6,
+      "reload": 70,
+      "recoil": 0.5,
+      "outline":true,
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "missile",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+        "lifetime": 35,
+        "damage": 70,
+        "pierceArmor": false,
+        "speed": 7,
+        "trailLength": 3,
+        "trailWidth": 1,
+        "width": 4,
+        "height": 7,
+        "frontColor": "FF795E",
+        "backColor": "C85C51",
+        "trailColor": "C85C51"
+      }
+    }
+  ]
+}

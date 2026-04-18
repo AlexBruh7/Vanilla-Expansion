@@ -1,0 +1,84 @@
+{
+  "name": "Blade",
+  "description": "A basic armored ship, very powerful for coast defense",
+  "research": {
+			  "requirements": [
+			  "silicon/200",
+			  "metaglass/185",
+			  "titanium/70"
+			  ],
+			  "parent": "risso"
+		  },
+  "outlineColor": "565666",
+  "type": "naval",
+  "armor": 4,
+  "hitSize": 12,
+  "squareShape": true,
+  "sprite": "arrow",
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.2,
+  "speed": 0.75,
+  "flying": false,
+  "health": 395,
+  "range": 160,
+
+  "weapons": [
+    {
+      "name": "blade-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": -2,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 10,
+      "rotateSpeed": 4,
+      "cooldownTime": 180,
+      "shootY": 8,
+      "reload": 200,
+      "recoil": 0.5,
+      "shootCone": 5,
+      "outline":true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "shoot": {
+        "shots": 4,
+        "shotDelay": 0
+      },
+      "bullet": {
+        "type": "MissileBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+        "lifetime": 40.940321,
+	      "homingRange": 0,
+	      "homingPower": 0,
+        "damage": 40,
+        "pierceArmor": false,
+        "speed": 4,
+        "trailLength": 4,
+        "trailWidth": 2,
+        "width": 5,
+        "height": 8,
+        "trailColor": "C85C51",
+        "frontColor": "FF795E",
+        "backColor": "C85C51"
+      }
+    }
+  ]
+}

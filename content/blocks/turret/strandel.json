@@ -1,0 +1,140 @@
+{
+ "name":"Strandel",
+ "description": "A medium range turret, useful for single target, with high damage and good tracking, but very slow and with a long cooldown",
+ "health": 1775,
+ "size": 3,
+ "recoil": 3.5,
+ "shootY": 5,
+ "cooldown": 550,
+ "reload": 235,
+ "range": 175,
+ "outline": true,
+ "trackingRange": 40,
+ "minRange": 40,
+ "drawMinRange": true,
+ "predictTarget": true,
+ "type": "itemTurret",
+ "category": "turret",
+ "requirements": [
+		"graphite/270",
+    "silicon/255",
+    "beryllium/175",
+    "tungsten/85"
+  	],
+ "research": "diffuse",
+ "ammoUseEffect": "casing1",
+ "inaccuracy": 1,
+ "rotateSpeed": 2.5,
+ "shootSound": "strandelShoot",
+ "shootEffect": "shootSmallFlame",
+ "targetGround": true,
+ "targetAir": false,
+ "hasItem": true,
+ "maxAmmo": 10,
+ "ammoPerShot": 5,
+ "shake": 6.5,
+ "consumes": {
+  "coolant": {
+    "amount": 0.2,
+    "optional": false
+  }
+ },
+ "shoot": {
+  "type": "ShootBarrel",
+  "shots": 2,
+  "firstShotDelay": 5,
+  "shotDelay": 15,
+  "barrels": [
+   7, 0, 0,
+   -7, 0, 0
+  ]
+ },
+ "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "reinforced-",
+    "parts": [   
+      {
+        "type": "RegionPart",
+       "suffix": "-barrel-l",
+       "x": 7,
+       "under": false,
+       "moves": [
+      {
+       "type": "PartMove",
+       "progress": "recoil",
+       "y": -4
+      }
+    ]
+   },
+      {
+        "type": "RegionPart",
+       "suffix": "-barrel-r",
+       "x": -7,
+       "under": false,
+       "moves": [
+      {
+       "type": "PartMove",
+       "progress": "recoil",
+       "y": -4
+      }
+    ]
+   }
+  ]
+  },
+ 
+ "ammoTypes": {
+   "tungsten": {
+     "reloadMultiplier": 1,
+      "type": "artilleryBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "titanExplosionSmall",
+      "despawnHit": true,
+      "lifetime": 30,
+      "splashDamage": 120,
+      "splashDamageRadius": 50,
+      "pierceArmor": false,
+      "speed": 7.75,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "width": 10,
+      "length": 18
+    },
+   "silicon": {
+     "reloadMultiplier": 1.15,
+     "rangeChange": 5,
+      "type": "artilleryBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "titanExplosionSmall",
+      "despawnHit": true,
+      "lifetime": 30,
+      "splashDamage": 80,
+      "splashDamageRadius": 50,
+      "pierceArmor": false,
+      "speed": 7.75,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "homingPower": 0.05,
+      "homingRange": 40,
+      "homingDelay": 5,
+      "width": 10,
+      "length": 20
+    },
+   "thorium": {
+     "reloadMultiplier": 0.9,
+     "rangeChange": 10,
+      "type": "artilleryBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "titanExplosionSmall",
+      "despawnHit": true,
+      "lifetime": 32,
+      "splashDamage": 100,
+      "splashDamageRadius": 60,
+      "pierceArmor": true,
+      "speed": 7.75,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "width": 10,
+      "length": 20
+    }
+  }
+}

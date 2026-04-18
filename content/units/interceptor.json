@@ -1,0 +1,68 @@
+{
+    "localizedName": "Interceptor",
+	"sprite": "interceptor",
+	"description": "A fast gunner ship, that attacks enemy units.",
+    "research": {
+			"requirements": [
+			"silicon/150",
+			"lead/100",
+			"copper/55",
+			"titanium/350"
+			],
+			"parent": "phalanx"
+		},
+    "speed": 5,
+	"riseSpeed": 2,
+    "accel": 0.05,
+    "drag": 0.05,
+	"lowAltitude": true,
+	"hitSize": 15,
+    "flying": true,
+    "health": 455,
+    "armor": 5,
+	"rotateSpeed": 2.55,
+	"baseRotateSpeed": 2,
+    "engineOffset": 8,
+	"engineSize": 3.75,
+	"trailLenght": 15,
+	"TargetAir": true,
+    "circleTarget": true,
+	"circleTargetRadius": 120,
+	"weapons": [
+		{
+    "name": "interceptor-barrel",
+	"layer": -1,
+    "shootCone": 1,
+    "mirror": true,
+    "top": false,
+    "x": 4,
+    "y": 6,
+    "reload": 7,
+	"shoot": {
+		"shots": 1,
+		"shotDelay": 1
+	},
+	"inaccuracy": 2,
+    "shootSound": "missile",
+    "recoil": 0.5,
+	"shake": 0.5,
+    "bullet": {
+		"lifetime": 22.5,
+        "type": "basicBulletType",
+	    "hitEffect": "flakExplosionBig",
+        "damage": 13,
+	    "keepVelocity": "true",
+	    "homingRange": 20,
+	    "speed": 11,
+	    "homingPower": 0.1,
+	    "hitSound": "dullExplosion",
+	    "hitSoundVolume": 0.7,
+	    "hitSoundPitch": 0.7,
+	    "width": 8,
+	    "height": 10,
+		"backColor": "99AAE8",
+        "frontColor": "CCD9E8"
+			}
+		}
+	]
+}

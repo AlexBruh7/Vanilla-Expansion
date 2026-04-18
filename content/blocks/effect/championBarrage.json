@@ -1,0 +1,26 @@
+{
+ "type": "CoreBlock",
+ "name": "Champion: Barrage",
+ "description": "the Pad of the Barrage champion, that can attack with a barrage of lots of bullets and a slow missile launcher",
+ "health": 1500,
+ "armor": 4,
+ "size": 2,
+ "unitType": "barrage",
+ "solid": false,
+ "squareSprite": false,
+ "placeableLiquid": true,
+ "itemCapacity": 0,
+ "unitCapModifier": 0,
+ "alwaysUnlocked": true,
+ "firstTier": true,
+ "research": "championPlaque",
+ "requirements": [
+	 "copper/1700",
+	 "lead/950",
+	 "graphite/1255",
+	 "silicon/655",
+	 "metaglass/200"
+ ],
+ "researchCostMultiplier": 0.5,
+ "category": "effect"
+}

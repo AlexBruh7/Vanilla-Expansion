@@ -1,0 +1,44 @@
+{
+  "upgrades": [
+    [
+      "mace",
+      "fortress"
+    ],
+    [
+      "pulsar",
+      "quasar"
+    ],
+    [
+      "atrax",
+      "spiroct"
+    ],
+    [
+      "rampart",
+      "vanguard"
+    ],
+    [
+      "blastor",
+      "veltrix"
+    ],
+    [
+      "horizon",
+      "zenith"
+    ],
+    [
+      "poly",
+      "mega"
+    ],
+    [
+      "minke",
+      "bryde"
+    ],
+    [
+      "oxynoe",
+      "cyerce"
+    ],
+    [
+      "breaker",
+      "crusier"
+    ]
+  ]
+}

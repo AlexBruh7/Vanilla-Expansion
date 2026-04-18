@@ -1,0 +1,98 @@
+{
+ "name":"Containment",
+ "description": "long range heavy missile launcher, needs coolant to work properly",
+ "health": 2250,
+ "size": 3,
+ "recoil": 3.5,
+ "shootY": 5,
+ "cooldown": 550,
+ "reload": 75,
+ "range": 170,
+ "predictTarget": true,
+ "type": "itemTurret",
+ "category": "turret",
+ "requirements": [
+		"graphite/150",
+    "silicon/150",
+    "beryllium/255",
+    "tungsten/35"
+  	],
+ "research": "breach",
+ "ammoUseEffect": "casing1",
+ "inaccuracy": 3,
+ "rotateSpeed": 3,
+ "shootSound": "shootTitan",
+ "targetGround": true,
+ "targetAir": true,
+ "hasItem": true,
+ "researchCostMultiplier": 2,
+ "maxAmmo": 10,
+ "ammopershot": 5,
+ "shake": 1.5,
+ "consumes": {
+  "coolant": {
+    "amount": 0.2,
+    "optional": false
+  }
+ },
+ "shoot": {
+  "shots": 3,
+  "firstShotDelay": 0,
+  "shotDelay": 7
+ },
+ "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "reinforced-"
+  },
+ "ammoTypes": {
+    "beryllium": {
+     "reloadMultiplier": 1,
+      "type": "basicBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "hitBulletSmall",
+      "despawnHit": true,
+      "lifetime": 28,
+      "damage": 35,
+      "pierceArmor": false,
+      "speed": 7.5,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "width": 10,
+      "length": 20
+    },
+   "tungsten": {
+     "reloadMultiplier": 1,
+      "type": "basicBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "hitBulletSmall",
+      "despawnHit": true,
+      "lifetime": 28,
+      "damage": 40,
+      "pierceArmor": false,
+      "speed": 7.5,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "width": 10,
+      "length": 20
+    },
+   "silicon": {
+     "reloadMultiplier": 1.2,
+     "rangeChange": 5,
+      "type": "basicBulletType",
+      "shootEffect": "shootBig2",
+      "hitEffect": "hitBulletSmall",
+      "despawnHit": true,
+      "lifetime": 30,
+      "damage": 35,
+      "pierceArmor": false,
+      "speed": 7.5,
+      "trailLength": 8,
+      "trailWidth": 1.5,
+      "homingPower": 0.05,
+      "homingRange": 40,
+      "homingDelay": 5,
+      "width": 10,
+      "length": 20
+    }
+  }
+}

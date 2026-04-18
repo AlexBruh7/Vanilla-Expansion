@@ -1,0 +1,105 @@
+{
+  "localizedName": "Volcaris",
+  "research": {
+    "parent": "veltrix",
+    "requirements": [
+      "silicon/1500",
+      "graphite/655",
+      "titanium/1200",
+      "blast-compound/1200"
+    ],
+    "objectives": [
+      "ground-factory"
+    ]
+  },
+  "description": "a burst fire mech, eqquiped with dual machine guns.",
+  "type": "mech",
+  "armor": 14,
+  "speed": 0.3,
+  "flying": false,
+  "targetAir": true,
+  "health": 11650,
+  "hitSize": 26,
+  "innacuracy": 16,
+  "outlineColor": "565666",
+  "weapons": [
+    {
+      "name": "volcaris-weapon",
+      "shootCone": 16,
+      "mirror": true,
+      "alternate": false,
+      "top": false,
+      "rotate": false,
+      "inaccuracy": 30,
+      "x": 16,
+      "y": -1,
+      "reload": 100,
+      "shootSound": "shootSnap",
+      "recoil": 1.25,
+      "shoot": { 
+         "shots": 8,
+         "shotDelay": 0
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "bullet",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FF795E",
+              "colorTo": "C85C51",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 5,
+              "colorFrom": "FF795E",
+              "colorTo": "C85C51",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "frontColor": "FF795E",
+        "backColor": "C85C51",
+        "damage": 85,
+        "speed": 4,
+        "lifetime": 35,
+        "trailWidth": 3,
+        "splashDamage": 40,
+        "splashDamageRadius": 40,
+        "trailColor": "C85C51",
+        "trailLength": 18,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "fragBullet":{
+                "type": "BasicBulletType",
+                "collidesGround": false,
+                "lifetime": 10,
+                "damage": 20,
+                "speed": 3,
+                "width":2.5,
+                "height": 4.5,
+                "bulletShrink": 0,
+                "impact": true,
+                "knockback": 0.75,
+                "frontColor": "FF795E",
+                "backColor": "C85C51",
+                "despawnHit": false,
+                "hitSound": "none",
+            "hitEffect": "none",
+            "despawnEffect": "none"
+        },
+        "width": 14,
+        "height": 20
+      }
+    }
+  ]
+}

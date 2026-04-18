@@ -1,0 +1,67 @@
+{
+  "type": "consumeGenerator",
+  "name": "Oil burner",
+  "description": "burning oil to power",
+  "size": 2,
+  "hasLiquids": true,
+  "liquidCapacity": 60,
+  "hasItems": false,
+  "liquidDuration": 150,
+  "powerProduction": 3.75,
+  "researchCostMultiplier": 1.5,
+  "requirements": [
+    "copper/50",
+    "graphite/35",
+    "silicon/20",
+    "lead/75"
+  ],
+  "research": "steam-generator",
+  "consumes": {
+    "liquids": [
+      "oil/0.125",
+      "water/0.255"
+    ]
+   },
+  "category": "power",
+  "idleSound": "respawning",
+  "idleSoundVolume": 0.5,
+  "generateEffectRnd": 0,
+  "generateEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "particleEffect",
+        "particles": 20,
+        "colorFrom": "FFBE0080",
+        "colorTo": "80001000",
+        "length": 5,
+        "lifetime": 50,
+        "sizeFrom": 1,
+        "sizeTo": 0
+      }
+    ]
+  },
+  "drawer": {
+    "type": "drawMulti",
+    "drawers": [
+      {
+        "type": "drawDefault"
+      },
+      {
+        "type": "drawRegion",
+        "suffix": "-turbine",
+        "spinSprite": true,
+        "rotateSpeed": 4
+      },
+      {
+        "type": "drawRegion",
+        "suffix": "-top"
+      },
+      {
+        "type": "drawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "oil"
+      }
+    ]
+  }
+}

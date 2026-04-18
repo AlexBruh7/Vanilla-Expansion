@@ -1,0 +1,23 @@
+{
+ "name": "Mass Unloader",
+ "type": "PayloadUnloader",
+ "health": 500,
+ "size": 3,
+ "category": "units",
+ "offloadSpeed": 2,
+ "maxBlockSize": 3,
+ "consumes": {
+    "power": 1
+  },
+ "maxPowerUnload": 1,
+ "requirements": [
+    "copper/300",
+    "lead/285",
+    "titanium/285",
+    "thorium/105",
+    "plastanium/60"
+ ],
+ "research": {
+   "parent": "mass-driver"
+ }
+}

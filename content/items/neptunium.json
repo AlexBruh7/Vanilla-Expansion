@@ -1,0 +1,14 @@
+{
+  "name": "Neptunium",
+  "description": "The most radioactive resource ever, but also the most unstable, it can be used for make the most powerful weapons, can explode.",
+  "details": "A rare item, very radioactive, can be refined.",
+  "sprite": "neptunium",
+  "cost": 4,
+  "hardness": 4,
+  "radioactivity": 2,
+  "explosiveness": 3.5,
+  "color": "2036F5",
+  "research": {
+    "parent":"refined-uranium"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Uranium",
+  "description": "An very expensive resource, but if used properly it can have big advantages, but needs to be used carefully because it is very unstable",
+  "details": "A rare item, very radioactive, can be refined.",
+  "sprite": "uranium",
+  "cost": 4,
+  "hardness": 4,
+  "radioactivity": 1.4,
+  "explosiveness": 5,
+  "color": "3abd1e",
+  "research": {
+    "parent":"thorium"
+  }
+}

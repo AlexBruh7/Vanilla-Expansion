@@ -1,0 +1,52 @@
+{
+ "type": "Constructor",
+ "size": 3,
+ "health": 450,
+ "category": "units",
+ "requirements": [
+   "copper/200",
+   "lead/150",
+   "thorium/455",
+   "titanium/345",
+   "silicon/350"
+ ] ,
+ "hasPower": "true",
+ "consumes": {
+   "power": 2.75
+ },
+ "buildSpeed": 0.5,
+ "filter": [
+   "copper-wall",
+   "copper-wall-large",
+   "titanium-wall",
+   "titanium-wall-large",
+   "plastanium-wall",
+   "plastanium-wall-large",
+   "thorium-wall",
+   "thorium-wall-large",
+   "phase-wall",
+   "phase-wall-large",
+   "surge-wall",
+   "surge-wall-large",
+   "scrap-wall",
+   "scrap-wall-large",
+   "steel-wall",
+   "steel-wall-large",
+   "container",
+   "liquid-container",
+   "duo",
+   "scatter",
+   "scorch",
+   "hail",
+   "wave",
+   "arc",
+   "salvo",
+   "lancer",
+   "parallax",
+   "swarmer"
+],
+ "research": "mass-driver",
+ "squareSprite": "false",
+ "maxBlockSize": 2,
+ "researchCostMultiplier": 0.5
+}

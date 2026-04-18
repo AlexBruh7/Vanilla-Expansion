@@ -1,0 +1,24 @@
+{
+ "name": "Titanium bridge",
+ "type": "ItemBridge",
+ "size": 1,
+ "health": 125,
+ "speed": 4,
+ "range": 6,
+ "requirements": [
+   "copper/10",
+   "lead/15",
+   "titanium/5"
+ ],
+ "category": "distribution",
+ "transportTime": 0.5,
+ "squareSprite": false,
+ "itemCapacity": 35,
+ "hasPower": false,
+ "parent": "titanium-conveyor",
+ "researchCost": [
+   "copper/200",
+   "lead/350",
+   "titanium/100"
+ ]
+}

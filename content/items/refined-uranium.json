@@ -1,0 +1,11 @@
+{
+ "name": "Refined uranium",
+ "sprite": "refined-uranium",
+ "description": "a better version of the natural uranium, more radioactive than his original version",
+ "radioactivity": 2,
+ "explosiveness": 6,
+ "color": "23C6DB",
+ "research": {
+             "parent": "phase-fabric"
+ }
+}

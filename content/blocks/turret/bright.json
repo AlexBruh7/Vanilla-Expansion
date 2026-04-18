@@ -1,0 +1,73 @@
+{
+ "name":"Bright",
+ "description": "long range heavy missile launcher, needs coolant to work properly",
+ "health": 2850,
+ "size": 4,
+ "recoil": 3.5,
+ "shootY": 5,
+ "cooldown": 550,
+ "reload": 1285,
+ "range": 1400,
+ "trackingRange": 200,
+ "minRange": 200,
+ "drawMinRange": true,
+ "predictTarget": false,
+ "type": "itemTurret",
+ "category": "turret",
+ "requirements": [
+"titanium/1285",
+"lead/1615",
+"graphite/1645",
+"silicon/1450",
+"thorium/1000",
+"steel/890"
+],
+ "ammoUseEffect": "casing1",
+ "inaccuracy": 0,
+ "rotateSpeed": 0.35,
+ "shootSound": "shootTitan",
+ "shootEffect": "shootSmokeMissile",
+ "targetGround": true,
+ "targetAir": false,
+ "hasItem": true,
+ "researchCostMultiplier": 2,
+ "sprite": "block-4",
+ "maxAmmo": 10,
+ "ammopershot": 5,
+ "shake": 6.5,
+ "consumes": {
+  "coolant": {
+    "amount": 0.2,
+    "optional": false
+  }
+ },
+
+ "ammoTypes": {
+   "refined-uranium": {
+    "reloadMultiplier": 0.65,
+    "instantDissapear": true,
+    "spawnUnit": "bright-uranium-missile"
+    },
+    "plutonium": {
+    "reloadMultiplier": 1.5,
+    "instantDissapear": true,
+    "spawnUnit": "bright-plutonium-missile"
+    },
+   "thorium": {
+    "reloadMultiplier": 1.1,
+    "instantDissapear": true,
+    "rangeChange": -10,
+    "spawnUnit": "bright-thorium-missile"
+    },
+   "pyratite": {
+    "reloadMultiplier": 1,
+    "instantDissapear": true,
+    "spawnUnit": "bright-pyratite-missile"
+    },
+    "blast-compound": {
+    "reloadMultiplier": 1,
+    "instantDissapear": true,
+    "spawnUnit": "bright-blast-compound-missile"
+    }
+  }
+}

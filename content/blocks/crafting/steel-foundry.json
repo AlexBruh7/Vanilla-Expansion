@@ -1,0 +1,56 @@
+{
+ "name": "Steel foundry",  
+ "type": "GenericCrafter",
+ "description": "melts iron, lead and coal into steel, used for more resistent buildings and units",
+ "details": "the steel can be expensive, but if you know use it, can be a good material",
+ "size": 2,
+ "health": "475",
+ "hasPower": true,
+ "hasLiquids": false,
+ "craftTime": 110,
+ "craftEffect": "smeltsmoke",
+ "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+         {
+           "type": "DrawDefault"
+         },
+         {
+           "type": "DrawFlame",
+           "flameColor": "ffdfb3",
+           "flameRadius": 2.5,
+           "flameRadiusIn": 1.5,
+           "flameRadiusScl": 2.5,
+           "flameRadiusMag": 1.5,
+           "flameRadiusInMag": 0.9
+         }
+        ]
+       },
+ "category": "crafting",
+ "requirements": [
+  "copper/100",
+  "graphite/50",
+  "silicon/75",
+  "titanium/20"
+ ],
+ "research": "thorium-reactor",
+ "parent": "steel",
+ "warmupSpeed": 100,
+ "outputItem": {
+     "item": "steel",
+     "amount": 1
+     },
+  "consumes": {
+     "power": 1.8,
+     "items": {
+         "items": [
+         "iron/2",
+         "lead/1",
+         "coal/1"
+         ]
+    }
+   },
+ "explosionDamage": 50,
+ "explosionRadius": 50,
+ "explosionShake": 20
+}

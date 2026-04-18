@@ -1,0 +1,81 @@
+{
+  "name": "Rampart",
+  "description": "a heavy anti air tank, very effective agaisnt air threats or mobile anti air defense",
+   "research": {
+			"requirements": [
+			"silicon/255",
+			"lead/3550",
+			"graphite/250"
+			],
+			"parent": "bulwark"
+		},
+  "outlineColor": "565666",
+  "type": "tank",
+  "armor": 6,
+  "targetAir": true,
+  "targetGround": false,
+  "predictTarget": false,
+  "hitSize": 15,
+  "squareShape": true,
+  "treadPullOffset": 8,
+  "sprite": "rampart",
+  "treadRects": [
+    {
+      "x": 7,
+      "y": -26,
+      "width": 14,
+      "height": 51
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "rotateSpeed": 2.5,
+  "speed": 0.7,
+  "flying": false,
+  "health": 445,
+  "range": 180,
+
+  "weapons": [
+    {
+      "name": "rampart-cannon",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 0,
+      "layerOffset": 1,
+      "rotate": true,
+      "inaccuracy": 2,
+      "rotateSpeed": 4,
+      "cooldownTime": 180,
+      "targetAir": true,
+      "targetGround": false,
+      "shootY": 8,
+      "reload": 120,
+      "recoil": 0.2,
+      "outline":true,
+      "shoot": { 
+         "shots": 5,
+         "shotDelay": 7.55
+       },
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-glow",
+          "layer": -1,
+          "mirror": true,
+          "blending": "additive",
+          "color": "ff2302",
+          "colorTo": "ff2302",
+          "outline": false,
+          "progress": "warmup"
+        }
+      ],
+      "shootSound": "shoot",
+      "bullet": {
+        "instantDissapear": true,
+        "spawnUnit": "rampart-missile"
+      }
+    }
+  ]
+}

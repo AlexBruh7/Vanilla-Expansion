@@ -1,0 +1,21 @@
+{
+"name":"Large neptunium wall",
+"description": "a large wall made of steel, not very resistent but can reflect bullets",
+"health": 4880,
+"armor": 20,
+"size": 2,
+"researchCostMultiplier": 0.5,
+"sprite": "neptunium-wall-large",
+"requirements": [
+"neptunium/24"
+],
+"category": "defense",
+"type": "wall",
+"research": {
+      "parent": "thorium-wall",
+      "requirements": [
+        "neptunium/800"
+      ]
+  }
+
+}
