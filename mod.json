@@ -4,7 +4,7 @@
     "name" : "vanilla-expansion",
     "main": "vanilla.expansion.VanillaExpansionMain",
     "author": "AlexBruh",
-    "description":"Adds new content to vanilla still in very early development, team: AlexBruh: Coding, spriting   PalomoArduino: Testing",
+    "description":"Adds new content to vanilla still in very early development, team: AlexBruh: Coding, spriting",
     "subtitle": "[#e03a39[]]Feeling that Vanilla needs some extra stuff?",
     "minGameVersion": "157",
     "hidden": false,
